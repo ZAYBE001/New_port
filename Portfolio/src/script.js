@@ -134,10 +134,6 @@ function init3DTilt() {
     });
 }
 async function fetchPinnedProjects() {
-    console.log("Fetching projects..."); // This should show up in your Inspect -> Console
-    // ... rest of the code
-}
-async function fetchPinnedProjects() {
     const username = 'ZAYBE001'; 
     const container = document.querySelector('#projects .grid');
     

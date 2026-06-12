@@ -186,3 +186,10 @@
     font-size: 0.875rem;
     color: #94a3b8; /* slate-400 */
 }
+/*react css */
+.grainient-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
