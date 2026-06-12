@@ -2,8 +2,6 @@ import { useEffect, useRef } from 'react';
 import { Renderer, Program, Mesh, Triangle } from 'ogl';
 
 import "../style.css";
-import '../script.js';
-import '../App.jsx';
 
 const hexToRgb = hex => {
   const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
@@ -282,7 +280,13 @@ const Grainient = ({
   ]);
 
 
-  return <div ref={containerRef} className={`grainient-container ${className}`.trim()} />;
+  return (
+    <div
+      ref={containerRef}
+      className={`grainient-container ${className}`.trim()}
+      style={{ width: '100%', height: '100%' }}
+    />
+  );
 };
 
 export default Grainient;

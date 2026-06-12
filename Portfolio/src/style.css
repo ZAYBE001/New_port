@@ -188,8 +188,12 @@
 }
 /*react css */
 .grainient-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
+  position: fixed; /* Keeps it locked to the screen viewport */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Spans the full width of the view window */
+  height: 100vh; /* Spans the full height of the view window */
+  z-index: -1; /* Pushes the entire shader layer BEHIND your landing content */
   overflow: hidden;
+  pointer-events: none; /* Allows users to scroll or click links right through it */
 }
