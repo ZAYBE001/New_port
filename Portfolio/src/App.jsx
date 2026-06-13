@@ -157,7 +157,7 @@ function App() {
               Full-Stack Software Engineer
             </h2>
             <p className="text-lg md:text-xl lg:text-2xl mb-10 text-slate-200 leading-relaxed max-w-2xl font-normal">
-              I craft highly performant, accessible, and visually striking digital experiences that bridge elegant user interfaces with robust backend architectures. Specializing in the <strong>React & Python</strong> ecosystem, I build systems engineered for seamless functionality, clean logic, and exceptional database design. From scalable web frameworks to automation engines, I focus on turning complex software metrics into fluid, production-ready systems.
+              I craft highly performant, accessible, and visually striking digital experiences that bridge elegant user interfaces with robust  architectures.  I build systems engineered for seamless functionality, clean logic, and exceptional database design. From scalable web frameworks to automation engines, I focus on turning complex software metrics into fluid, production-ready systems.
             </p>
             <div className="flex gap-5">
               <a href="#projects" className="bg-indigo-500 hover:bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-200 shadow-lg shadow-indigo-500/25 hover:scale-[1.02]">
