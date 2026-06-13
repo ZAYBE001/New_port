@@ -153,46 +153,59 @@
 
 /* Optional styling to make your skill-cards look sharp and consistent */
 .skill-card {
-    background-color: #1e293b; /* slate-800 */
+    background-color: rgba(30, 41, 59, 0.4); /* slate-800 with slight transparency to let the gradient blend */
+    backdrop-filter: blur(8px); /* smooth background blur matching the layout */
     border: 1px solid #334155; /* slate-700 */
-    padding: 1.5rem;
-    border-radius: 12px;
+    
+    /* 1. INCREASED SIZE & INNER SPACING */
+    padding: 2.5rem 2rem; /* Increased vertical and horizontal padding for more breathing room */
+    border-radius: 24px; /* Slightly rounder edges to match the larger footprint */
+    min-height: 220px; /* Ensures all cards maintain a uniform, substantial block size */
+    
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center; /* Centers items vertically within the larger card */
     text-align: center;
-    gap: 0.75rem;
-    transition: all 0.3s ease;
+    
+    /* 2. MORE SPACE BETWEEN INTERNAL ELEMENTS */
+    gap: 1.25rem; /* Pushes the icon, title, and paragraph further apart */
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); /* Ultra-smooth elite transition easing */
 }
 
 .skill-card:hover {
     border-color: #6366f1; /* primary-500 */
-    transform: translateY(-5px); /* Gentle lift on hover */
-    box-shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.2);
+    transform: translateY(-8px); 
+    box-shadow: 0 20px 35px -10px rgba(99, 102, 241, 0.25); 
 }
 
+/* 3. LARGER ICONS */
 .skill-card i {
-    width: 32px;
-    height: 32px;
+    width: 44px; 
+    height: 44px; 
+    stroke-width: 2px; /* Ensures the icon outlines stay clean and crisp at scale */
 }
 
+/* 4. LARGER TYPOGRAPHY */
 .skill-card h3 {
-    font-size: 1.125rem;
-    font-weight: 600;
+    font-size: 1.5rem; 
+    font-weight: 700;  /* Bold accent weight */
     color: #ffffff;
+    letter-spacing: 0.025em;
 }
 
 .skill-card p {
-    font-size: 0.875rem;
-    color: #94a3b8; /* slate-400 */
+    font-size: 1.05rem; 
+    color: #cbd5e1; 
+    line-height: 1.6;
 }
 /*react css */
 .grainient-container {
   position: fixed; /* Keeps it locked to the screen viewport */
   top: 0;
   left: 0;
-  width: 100vw; /* Spans the full width of the view window */
-  height: 100vh; /* Spans the full height of the view window */
+  width: 100vw; 
+  height: 100vh; 
   z-index: -1; /* Pushes the entire shader layer BEHIND your landing content */
   overflow: hidden;
   pointer-events: none; /* Allows users to scroll or click links right through it */

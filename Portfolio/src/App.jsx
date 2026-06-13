@@ -179,27 +179,27 @@ function App() {
         {/* Skills Section */}
         <section ref={skillsRef} className="mb-24" id="skills">
           <div className="mb-12 flex justify-center">
-            <h2 className="text-3xl font-bold text-center" id="skills-heading">My <span className="text-indigo-500">Skills</span></h2>
+            <h1 className="text-3xl font-bold text-center" id="skills-heading">My <span className="text-indigo-500">Skills</span></h1>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div className="skill-card reveal-on-scroll">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="skill-card reveal-on-scroll p-8">
               <i data-feather="code" className="text-indigo-500"></i>
-              <h3>Frontend</h3>
+              <h2>Frontend</h2>
               <p>HTML, CSS, React, Tailwind, JavaScript</p>
             </div>
-            <div className="skill-card reveal-on-scroll">
+            <div className="skill-card reveal-on-scroll p-8">
               <i data-feather="server" className="text-indigo-500"></i>
-              <h3>Backend</h3>
+              <h2>Backend</h2>
               <p>Node.js, Flask, Django, PostgreSQL</p>
             </div>
-            <div className="skill-card reveal-on-scroll">
+            <div className="skill-card reveal-on-scroll p-8">
               <i data-feather="database" className="text-indigo-500"></i>
-              <h3>Database</h3>
+              <h2>Database</h2>
               <p>MongoDB, PostgreSQL, MySQL</p>
             </div>
-            <div className="skill-card reveal-on-scroll">
+            <div className="skill-card reveal-on-scroll p-8">
               <i data-feather="cloud" className="text-indigo-500"></i>
-              <h3>DevOps</h3>
+              <h2>DevOps</h2>
               <p>Ubuntu, Docker, Git, CI/CD</p>
             </div>
           </div>
