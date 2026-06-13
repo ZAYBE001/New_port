@@ -46,45 +46,45 @@ function App() {
 
       {/* 2. THE PORTFOLIO WORKSPACE CONTENT (z-10 brings it forward over the background) */}
       <main className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        
-        {/* Two-Column Responsive Layout */}
-        <section className="flex flex-col md:flex-row items-center justify-between gap-12 mb-24 min-h-[80vh]">
-          <div className="md:w-3/5 text-left">
-            
-            {/* Note: Removed 'opacity-0' to guarantee text visibility */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-white">
+        <section className="w-full min-h-[85vh] flex flex-col md:flex-row items-center justify-between gap-12 mb-24 pt-12">
+          <div className="w-full md:w-3/5 text-left flex flex-col justify-center items-start">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold mb-4 text-white tracking-tight">
               Hey, I'm <span className="text-indigo-500">Zaybe</span>
             </h1>
 
-            <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-emerald-400">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-emerald-400 tracking-wide">
               Full-Stack Software Engineer
             </h2>
 
-            <p className="text-base md:text-lg mb-8 text-slate-300 leading-relaxed max-w-2xl">
-              I craft digital experiences that are fast, accessible, and visually appealing. 
-                With a passion for functionality in web development, I turn ideas into reality.
+            <p className="text-lg md:text-xl lg:text-2xl mb-10 text-slate-200 leading-relaxed max-w-2xl font-normal">
+              I craft highly performant, accessible, and visually striking digital experiences that bridge elegant user interfaces with robust backend architectures. Specializing in the <strong>React & Python</strong> ecosystem, I build systems engineered for seamless functionality, clean logic, and exceptional database design. From scalable web frameworks to automation engines, I focus on turning complex software metrics into fluid, production-ready systems.
             </p>
 
-            <div className="flex gap-4">
-              <a href="#projects" className="bg-indigo-500 hover:bg-indigo-600 text-white px-6 py-3 rounded-lg font-medium transition-colors shadow-lg shadow-indigo-500/20">
+            <div className="flex gap-5">
+              <a
+                href="#projects"
+                className="bg-indigo-500 hover:bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-200 shadow-lg shadow-indigo-500/25 hover:scale-[1.02]"
+              >
                 View Systems
               </a>
-              <a href="#contact" className="border-2 border-indigo-500 text-indigo-400 hover:bg-indigo-500 hover:text-white px-6 py-3 rounded-lg font-medium transition-colors">
+              <a
+                href="#contact"
+                className="border-2 border-indigo-500 text-indigo-400 hover:bg-indigo-500 hover:text-white px-8 py-4 rounded-xl text-lg font-semibold transition-all duration-200 hover:scale-[1.02]"
+              >
                 Contact Me
               </a>
             </div>
           </div>
 
-          {/* Profile Picture Frame */}
-          <div className="md:w-2/5 flex justify-center">
-            <div className="relative w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-indigo-500 shadow-2xl shadow-indigo-500/10">
+          <div className="w-full md:w-2/5 flex justify-center md:justify-end items-center">
+            <div className="relative w-80 h-80 md:w-[26rem] md:h-[26rem] lg:w-[32rem] lg:h-[32rem] rounded-full overflow-hidden border-4 border-indigo-500 shadow-2xl shadow-indigo-500/10 transition-transform duration-300 hover:scale-[1.01]">
               <img src="src/assets/me.jpeg" alt="Zaybe - Developer portrait" className="w-full h-full object-cover" />
             </div>
           </div>
         </section>
 
-        {/* Skills Section */}
-        <section className="mb-24" id="skills">
+          {/* Skills Section */}
+          <section className="mb-24" id="skills">
           <div className="mb-12 flex justify-center">
             <h2 className="text-3xl font-bold text-center">
               My <span className="text-indigo-500">Skills</span>
