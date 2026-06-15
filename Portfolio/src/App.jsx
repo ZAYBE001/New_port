@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import Grainient from './components/background.jsx'; 
+import myPortrait from './assets/me.jpeg';
 
 function App() {
   // 1. React State Management
