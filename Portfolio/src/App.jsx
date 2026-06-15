@@ -172,7 +172,7 @@ function App() {
 
           <div className="w-full md:w-2/5 flex justify-center md:justify-end items-center">
             <div className="relative w-72 h-72 md:w-80 md:h-80 lg:w-[32rem] lg:h-[32rem] rounded-full overflow-hidden border-4 border-indigo-500 shadow-2xl shadow-indigo-500/10 transition-transform duration-300 hover:scale-[1.01]">
-              <img src="src/assets/me.jpeg" alt="Zaybe - Developer portrait" className="w-full h-full object-cover" />
+              <img src={myPortrait} alt="Zaybe - Developer portrait" className="w-full h-full object-cover" />
             </div>
           </div>
         </section>
