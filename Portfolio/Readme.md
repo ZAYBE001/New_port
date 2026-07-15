@@ -1,1 +1,2 @@
 PORTFOLIO
+A dynamic, high-performance personal portfolio website built with **React**, **Vite**, and **Tailwind CSS**. This interactive application showcase is fully responsive, optimized for modern displays, and integrated with live API configurations to deliver a seamless user experience.
